@@ -1,4 +1,4 @@
-require('dotenv').config(); // Loads environment variables
+require('dotenv').config(); 
 
 module.exports = {
   client: process.env.DB_CLIENT,
@@ -7,5 +7,8 @@ module.exports = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
+  },
+  migrations: {
+    tableName: 'knex_migrations',
   },
 };
